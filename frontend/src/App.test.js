@@ -5,7 +5,7 @@ import App from './App';
 
 test('renders header', () => {
   render(<App />);
-  const headerElement = screen.getByText(/City Data/i);
+  const headerElement = screen.getByText(/prefectures.tokyo/i); // TODO: handle i18n correctly
   console.log(headerElement);
-  expect(headerElement).toHaveTextContent("City Data");
+  expect(headerElement).toHaveTextContent("prefectures.tokyo");
 });
